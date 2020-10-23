@@ -1,0 +1,18 @@
+<p>
+  <strong>Book Information :</strong>
+  <%= @comment.book.title %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @comment.title %>
+</p>
+ 
+<p>
+  <strong>Content:</strong>
+  <%= @comment.content %>
+</p>
+
+<%= form_for([@book, @comment]) do |list| %>
+  <%= list.submit "Approve" %>
+<% end %>

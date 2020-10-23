@@ -1,0 +1,27 @@
+<h1>Welcome The Book Store</h1>
+<p><i>Everything is working with by barter</i></p>
+<p><i>If you wanna share or take book you need to register or login</i></p>
+    
+    <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Pagecount</th>
+      <th>User Name</th>
+    </tr>
+    
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book.author %></td>
+        <td><%= book.pagecount %></td>
+        <td><%= book.user.username %></td>
+      </tr>
+    <% end %>
+  </tbody>
+    </table>
+    
